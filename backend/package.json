@@ -1,0 +1,27 @@
+{
+  "name": "multi-vendor-backend",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "node dist/main.js",
+    "start:dev": "nodemon --watch 'src/**/*.js' --exec 'node' src/main.js",
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@nestjs/common": "^9.0.0",
+    "@nestjs/core": "^9.0.0",
+    "@nestjs/graphql": "^10.0.0",
+    "@nestjs/platform-express": "^9.0.0",
+    "apollo-server-express": "^3.6.7",
+    "bcrypt": "^5.0.1",
+    "graphql": "^16.6.0",
+    "jsonwebtoken": "^9.0.0",
+    "pg": "^8.8.0",
+    "prisma": "^4.10.1",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.5.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
