@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for RTL and dark mode */
+html[dir="rtl"] {
+  direction: rtl;
+  unicode-bidi: embed;
+}
